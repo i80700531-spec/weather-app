@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="top">
+            <input type="text" id="citty" placeholder="Shaharni kiriting">
+            <button onclick="getWeather()">🔍</button>
+        </div>
+
+        <div class="main">
+            <h2 id="city">—</h2>
+            <img id="icon" src="" alt="">
+            <h1 id="temp">--°</h1>
+            <p id="desc">—</p>
+
+            <div class="info">
+                <div>🌧 <span id="rain">--%</span></div>
+                <div>💧 <span id="humidity">--%</span></div>
+                <div>💨 <span id="wind">-- m/s</span></div>
+            </div>
+        </div>
+
+        <div class="forecast">
+            <h3>Bugun</h3>
+            <div id="hourly"></div>
+        </div>
+
+        <div class="week">
+            <h3>7 kunlik</h3>
+            <div id="daily"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

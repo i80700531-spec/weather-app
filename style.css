@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(180deg, #2b1b5a, #3b2c77, #4c2c6d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.app {
+    width: 360px;
+    padding: 20px;
+}
+
+.top {
+    display: flex;
+    gap: 10px;
+}
+
+.top input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.top button {
+    border: none;
+    border-radius: 50%;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+.main {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main img {
+    width: 120px;
+}
+
+.main h1 {
+    font-size: 64px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255,255,255,0.15);
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.forecast, .week {
+    margin-top: 20px;
+}
+
+#hourly, #daily {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.card {
+    min-width: 70px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
